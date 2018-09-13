@@ -1,0 +1,112 @@
+.userinfo {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 100px;
+}
+.profilemain {
+    background: url('../Media/Images/stars.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+}
+.userinfocontainer {
+    min-width: 700px;
+    padding: 0 20px;
+    color: white;
+    min-height: 325px;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid rgb(104, 95, 95);
+}
+input {
+    border-radius: 1px;
+    border: transparent;
+}
+.blurbgcont {
+    display: flex;
+    position: absolute;
+    top: 96px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 330px;
+}
+.blurbg {
+    width: 750px;
+    border-radius: 3px;
+    background: url('../Media/Images/stars.jpg');
+    background-position: 50% 5%;
+    background-size: 1200px 600px;
+    background-repeat: no-repeat;
+    min-height: 335px;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    left: 100px;
+    z-index: 5;
+}
+.h1alt {
+    color: rgb(25, 216, 25);
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+}
+.h1prof:not(:first-child) {
+    margin-bottom: 5px;
+}
+.profilebutton {
+    background-color: transparent;
+    color: white;
+    border: 2px white solid;
+    border-radius: 4px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+.profilebutton:hover {
+    background-color: rgb(25, 216, 25);
+    color: white;
+    font-size: 13px;
+    transform: scale(1.04);
+    font-weight: 500;
+}
+.profbut {
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    border: transparent;
+    margin-left: 7px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+.profbut:hover {
+    background-color: rgb(25, 216, 25);
+    font-weight: 500;
+    color: white;
+    font-size: 13px;
+}
+.addressline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    justify-content: space-between;
+    margin: 0 25px;
+}
+.addressline:hover {
+    color: rgb(25, 216, 25);
+    transform: skewX(1deg);
+    transform: scale(1.02);
+}
+.deleteicon {
+    height: 20px;
+    width: auto;
+}

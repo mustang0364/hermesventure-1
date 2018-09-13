@@ -1,0 +1,1 @@
+select * from addresses where userid = $1;

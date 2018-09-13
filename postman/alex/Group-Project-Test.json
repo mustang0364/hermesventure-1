@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "4520bae9-e5a6-4d13-8180-ec8853314181",
+		"name": "Group Project Endpoint test Test",
+		"description": "this is just a test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Shoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/shopping/peru/42",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shopping",
+						"peru",
+						"42"
+					]
+				},
+				"description": "This will search for womens shoes"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "test",
+			"script": {
+				"id": "16d0bb3e-7561-45fa-9b1a-10a67adb4769",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});",
+					"",
+					"pm.test('Should be Tibet', function() {",
+					"    console.log(pm.response.json()[1])",
+					"    pm.expect(pm.response.json()[1].category).to.eql('Peru')",
+					"    ",
+					"})",
+					"",
+					"pm.test('Should be Womens Tennis Shoes', function() {",
+					"    pm.expect(pm.response.json()[1].title).to.eql('Green Tennis Shoes')",
+					"})",
+					"",
+					"pm.test('Should Cost $60', function() {",
+					"    pm.expect(pm.response.json()[1].price).to.eql(60)",
+					"})"
+				]
+			}
+		}
+	]
+}

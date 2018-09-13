@@ -1,0 +1,112 @@
+.navbar-header {
+    position: fixed;
+    width: 100%;
+}
+.top-image {
+    background-image: url('https://www.eaglesnestoutfittersinc.com/shop/media/catalog/category/Suspension_6_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 90vh;
+}
+
+
+.content-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 350px;
+    justify-content: center;
+
+}
+
+.left-nav-pane {
+    background-color: white;
+    min-width: 200px;
+    text-align: center;
+}
+
+.peru-header, .maldives-header, .tibet-header, .get-all {
+    font-size: 35px;
+    color: black;
+    text-shadow: 1px 2px 3px gray;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.peru-list, .maldives-list, .tibet-list {
+    font-size: 22px;
+    width: 70px;
+    margin: 0 auto;
+    text-align: left;
+    cursor: pointer;
+}
+.peru-list li, .maldives-list li, .tibet-list li {
+    padding: 5px;
+}
+
+.products-container {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    overflow: scroll;
+    height: 620px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 50px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 4px black;
+    height: 200px;
+    max-width: 80px;
+}
+
+.product-info img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+@media (max-width: 400px) {
+
+    .content-container {
+        max-width: 500px;
+        padding-top: 250px;
+    }
+    .left-nav-pane {
+        min-width: 120px;
+    }
+    .peru-header, .maldives-header, .tibet-header, .get-all {
+        font-size: 25px;
+    }
+    .peru-list, .maldives-list, .tibet-list {
+        font-size: 18px;
+    }
+    .products-container {
+        padding: 10px;
+        overflow: scroll;
+        height: 620px
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-info {
+        margin: 5px;
+        padding: 10px;
+        height: 160px;
+        text-align: center;
+    }
+    .product-info img {
+        max-height: 100px;
+        max-width: 100px;
+    }
+}

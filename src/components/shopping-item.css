@@ -1,0 +1,152 @@
+
+
+.single-item-container {
+    padding-top: 110px;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.single-item-info-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0 100px;
+}
+
+.single-item-img img {
+    max-height: 500px;
+    /* border: 1px solid #E3FEB5;
+    box-shadow: 1px 1px 4px black; */
+    /* background-color:#E3FEB5 ; */
+}
+
+.single-item-info {
+    display: block;
+    text-align: right;
+}
+.single-item-info h1, .single-item-info h2 {
+    font-size: 48px;
+    padding: 10px;
+}
+
+.single-item-info h3 {
+    font-size: 36px;
+    padding: 40px 10px;
+}
+
+.single-item-info h4 {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.single-item-info input {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+}
+.single-item-info button {
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid grey 2px;
+    padding: 5px 15px;
+    margin: 20px 10px;
+    background: rgb(68, 72, 75);
+    color: white;
+
+}
+
+.single-item-description {
+    text-align: left;
+    max-width: 700px;
+    padding: 10px;
+}
+
+.single-item-description h1 {
+    font-size: 24px;
+    padding: 20px;
+}
+
+.single-item-description p {
+    font-size: 20px;
+    line-height: 1.3em
+}
+
+.related-header {
+    font-size: 36px;
+    padding: 20px;
+    text-align: center;
+}
+.related-img-container {
+    display: grid;
+    margin: 0 auto;
+    width: 900px;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    grid-gap: 20px; 
+}
+.img-container {
+    min-width: 200px;
+    
+}
+.related-img-container img {
+    max-width: 200px;
+    padding: 10px;
+    max-height: 150px;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .single-item-container {
+        padding-top: 120px;
+        width: 350px;
+    }
+    .single-item-img img {
+        max-height: 200px;
+    }
+
+    .single-item-info-container {
+        padding: 0;
+    }
+    .single-item-info h1, .single-item-info h2 {
+        font-size: 24px;
+        padding: 10px;
+    }
+    .single-item-info h3 {
+        font-size: 20px;
+        padding: 0px;
+    }
+    .single-item-info button {
+        font-size: 20px;
+        padding: 0px;
+        margin: 10px;
+    
+    }
+    .single-item-description {
+        text-align: center;
+        width: 325px;
+        padding: 0px;
+        margin: 0 auto;
+    }
+    .single-item-description h1 {
+        font-size: 24px;
+        padding: 10px;
+    }
+    .related-container {
+        text-align: center;
+    }
+    .related-header {
+        font-size: 24px;
+        padding: 10px;
+    }
+    .related-img-container {
+        width: 325px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .img-container {
+        min-width: 100px;
+    }
+
+}

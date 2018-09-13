@@ -1,0 +1,46 @@
+.invoice-body {
+    padding-top: 64px;
+    padding-bottom: 50px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.invoice-container {
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px black;
+    margin-top: 50px;
+}
+
+.invoice-shipping-info {
+    font-size: 24px;
+    margin: 30px 0 0 30px;
+}
+
+.invoice-order-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+
+.invoice-order-container img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.backbutton {
+    background-color: transparent;
+    border: 2px gray solid;
+    border-radius: 8px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.backbutton:hover {
+    background-color: rgb(25, 216, 25);
+    border: 2px white solid;
+    color: white;
+    font-size: 13px;
+    transform: scale(1.04);
+    font-weight: 500;
+}
